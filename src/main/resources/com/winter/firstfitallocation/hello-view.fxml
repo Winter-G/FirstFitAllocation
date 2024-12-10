@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="429.0" prefWidth="625.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.winter.firstfitallocation.Controller">
+    <children>
+        <Button fx:id="loadButton" layoutX="40.0" layoutY="50.0" onAction="#onLoadData" style="-fx-background-color: plum;" text="Load Data" textFill="WHITE" />
+        <Button fx:id="runButton" layoutX="40.0" layoutY="98.0" onAction="#onRunAllocation" style="-fx-background-color: pink;" text="Run Allocation" textFill="WHITE" />
+
+        <!-- TextField for entering partition size -->
+        <TextField fx:id="partitionSizeField" layoutX="40.0" layoutY="150.0" promptText="Enter Partition Size" />
+        <Button fx:id="addPartitionButton" layoutX="103.0" layoutY="190.0" onAction="#onAddPartition" style="-fx-background-color: coral;" text="Add Partition" textFill="WHITE" />
+
+        <!-- TextField for entering job size -->
+        <TextField fx:id="jobSizeField" layoutX="40.0" layoutY="246.0" promptText="Enter Job Size" />
+        <Button fx:id="addJobButton" layoutX="129.0" layoutY="284.0" onAction="#onAddJob" style="-fx-background-color: lightcoral;" text="Add Job" textFill="WHITE" />
+
+        <!-- TextArea for displaying output -->
+        <TextArea fx:id="outputArea" layoutX="216.0" layoutY="54.0" prefHeight="297.0" prefWidth="334.0" />
+    </children>
+</AnchorPane>
